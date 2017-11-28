@@ -1,78 +1,68 @@
+<div class="container">
+    <div ncy-breadcrumb></div>
+    <div flash-alert data-active-class="in alert" class="fade" data-duration="10000">
+        <!-- Manually hide the alert with `hide()` -->
+        <button type="button" class="close" ng-click="hide()">&times;</button>
+        <span class="alert-message" data-ng-bind-html="flash.message"></span>
+    </div>
+    <div class="alert alert-info">Vous souhaitez participer à la <strong>transcription collaborative</strong>&nbsp;?<br/>Revenez sur ce site le <strong>30 janvier 2018</strong> pour découvrir les premiers testaments et participer à leur transcription !</div>
+</div>
+
 <main class="container" role="main">
     <div class="row">
-        <div class="col-lg-4 col-md-12">
-            <div class="card bg-none">
-                <h2 class="card-header bg-dark">Journée de lancement</h2>
-                <div class="card-body">
-                    <h3 class="card-title">Journée de lancement</h3>
-                    <p class="card-text">Le <strong>mardi 30 janvier 2018</strong>, de 14h à 19h, aura lieu aux <strong>Archives nationales</strong> (site de Paris) le lancement de la plateforme de transcription collaborative "<strong>Testaments de Poilus</strong>".</p>
-                    <p class="card-text">Lors de cette demi-journée, des conférences et ateliers présenteront le corpus des testaments, les enjeux de leur transcription et les étapes de la préparation d’une édition électronique. Des ateliers en petits groupes permettront d’assister à une présentation détaillée de la plateforme et de se familiariser avec son fonctionnement.</p>
-                    <p class="card-text">Le programme détaillé de la journée sera bientôt disponible, ainsi que le formulaire pour vous y inscrire.</p>
-                    <p class="card-text">
-                        Nous vous attendons nombreux,<br />L'équipe de Testaments de Poilus.
-                    </p>
-                </div>
+        <div class="col-md-12 mb-5"><img class="img-fluid" src="web/images/lancement-plateforme.png"/></div>
+    </div>
+    <div class="card-group mb-3">
+        <div class="card col-lg-8 col-12 bg-body">
+            <h2 class="card-header bg-dark">Journée de lancement</h2>
+            <div class="card-body">
+                <p class="card-text">Le <strong>mardi 30 janvier 2018</strong>, de 14h à 19h, aura lieu aux <strong>Archives nationales</strong> (site de Paris) le lancement de la plateforme de transcription collaborative <strong>"Testaments de Poilus"</strong>.</p>
+                <p class="card-text">
+                    Lors de cette demi-journée, des conférences et ateliers présenteront le corpus des testaments, les enjeux de leur transcription et les étapes de la préparation d’une édition électronique. Des ateliers en petits groupes permettront d’assister à une présentation détaillée de la plateforme et de se familiariser avec son fonctionnement.</p>
+                <p class="card-text">Le programme détaillé de la journée sera bientôt disponible, ainsi que le formulaire pour vous y inscrire.</p>
+                <p class="card-text">Nous vous attendons nombreux,<br/> L'équipe de Testaments de Poilus.</p>
             </div>
-            <div class="card bg-none">
-                <h2 class="card-header bg-dark">Projet</h2>
-                <div class="card-body">
-                    <h3 class="card-title">Comprendre le projet</h3>
-                    <p class="card-text">Le projet <strong>Testaments de Poilus</strong> vise à produire une édition électronique d’un
-                        millier de testaments des Poilus de la Première Guerre mondiale
-                        retrouvés dans les fonds des Archives nationales et des Archives Départementales des Yvelines.</p>
-                    <p class="card-text">Pour cela, deux opérations sont nécessaires : transcrire le texte des testaments et l’encoder en XML TEI. </p>
-                    <p class="card-text">Afin de mener ces tâches à bien, nous faisons appel à des volontaires du grand public.</p>
-                </div>
-            </div>
-            <div class="card bg-white">
+        </div>
+
+        <div class="card col-lg-4 col-12 pr-0">
+            <div class="mb-3 text-center"><a class="btn btn-secondary" href="?p=programme">Consultez le programme</a></div>
+            <div class="mb-4 text-center"><a class="btn btn-secondary" href="https://framaforms.org/testaments-de-poilus-transcription-collaborative-en-ligne-cest-parti-1510925121" target="_blank">Inscrivez-vous en ligne</a></div>
+            <div class="bg-white">
                 <h2 class="card-header bg-dark">Contact</h2>
                 <div class="card-body">
                     <p class="card-text lead">Vous vous intéressez au projet et souhaitez des informations&nbsp;?</p>
                     <p class="card-text lead">Vous avez une question, une observation&nbsp;?</p>
                     <p class="card-text lead">Vous souhaitez participer à l'opération de transcription collaborative&nbsp;?</p>
-                    <div class="text-right"><a href="mailto:karl.pineau@ens-lyon.fr" class="btn btn-sm btn-primary">Contactez-nous</a></div>
+                    <div class="text-right"><a href="mailto:testaments-de-poilus.an@culture.gouv.fr" class="btn btn-sm btn-primary">Contactez-nous</a></div>
                 </div>
             </div>
         </div>
-        <div class="col-lg-8 col-md-12">
-            <div class="row">
-                <div class="col-12">
-                    <div class="card bg-none" style="margin-bottom: 0;">
-                        <div class="card-body">
-                            <div class="alert alert-primary">Vous souhaitez participer à la transcription collaborative ? Revenez sur ce site le 30 janvier 2018 pour découvrir les premiers testaments et participer à leur transcription !</div>
-                        </div>
-                    </div>
-
-                    <img class="img-fluid" src="web/images/affiche.jpg" alt="Affiche de lancement de l'évènement" title="Affiche de lancement de l'évènement" />
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="card bg-none">
-                                <div class="card bg-none">
-                                    <h2 class="card-header bg-dark">Contribuer</h2>
-                                    <div class="card-body">
-                                        <h3 class="card-title">Vous pouvez contribuer au projet !</h3>
-                                        <p class="card-text">Le projet <strong>Testaments de Poilus</strong> ne peut aboutir sans l'aide d’internautes bénévoles.
-                                            Nous avons développé une plateforme participative sur laquelle vous pourrez nous aider à transcrire des testaments et
-                                            à les encoder. Vous contribuerez ainsi à leur analyse historique et à leur publication en ligne.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                                <div class="card bg-none">
-                                    <h2 class="card-header bg-dark">Encoder</h2>
-                                    <div class="card-body">
-                                        <h3 class="card-title">Qu’est-ce que XML TEI ?</h3>
-                                        <p class="card-text"><strong>XML TEI</strong> est un standard informatique utilisé notamment pour produire des éditions
-                                            électroniques de documents manuscrits rigoureuses et faciles à exploiter. On ajoute au texte transcrit des informations
-                                            sur la structure de ce texte, sur sa mise en page et sur la nature des objets qui le composent. Dans la plateforme, un
-                                            tutoriel explique les différentes étapes de ce travail.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    </div>
+    <div class="row">
+        <div class="card bg-none col-lg-4 col-md-12">
+            <h2 class="card-header bg-dark">Projet</h2>
+            <div class="card-body">
+                <h3 class="card-title">Comprendre le projet</h3>
+                <p class="card-text">Le projet <strong>Testaments de Poilus</strong> vise à produire une édition électronique d’un millier de testaments des Poilus de la Première Guerre mondiale retrouvés dans les fonds des Archives nationales et des Archives Départementales des Yvelines.</p>
+                <p class="card-text">Pour cela, deux opérations sont nécessaires : transcrire le texte des testaments et l’encoder en XML TEI.</p>
+                <p class="card-text">Afin de mener ces tâches à bien, nous faisons appel à des volontaires du grand public.</p>
+            </div>
+        </div>
+        <div class="card bg-none col-lg-4 col-md-12">
+            <h2 class="card-header bg-dark">Contribuer</h2>
+            <div class="card-body">
+                <h3 class="card-title">Vous pouvez contribuer au projet !</h3>
+                <p class="card-text">Le projet <strong>Testaments de Poilus</strong> ne peut aboutir sans l'aide d’internautes bénévoles.</p>
+                <p class="card-text">Nous avons développé une plateforme participative sur laquelle vous pourrez nous aider à transcrire des testaments et à les encoder.</p>
+                <p class="card-text">Vous contribuerez ainsi à leur analyse historique et à leur publication en ligne.</p>
+            </div>
+        </div>
+        <div class="card bg-none col-lg-4 col-md-12">
+            <h2 class="card-header bg-dark">Encoder</h2>
+            <div class="card-body">
+                <h3 class="card-title">Qu’est-ce que XML TEI ?</h3>
+                <p class="card-text">XML TEI est un standard informatique utilisé notamment pour produire des éditions électroniques de documents manuscrits rigoureuses et faciles à exploiter.</p>
+                <p class="card-text">On ajoute au texte transcrit des informations sur la structure de ce texte, sur sa mise en page et sur la nature des objets qui le composent. Dans la plateforme, un tutoriel explique les différentes étapes de ce travail.</p>
             </div>
         </div>
     </div>
